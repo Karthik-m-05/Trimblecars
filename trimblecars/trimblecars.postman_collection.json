@@ -1,0 +1,299 @@
+{
+  "info": {
+    "_postman_id": "your-collection-id",
+    "name": "Trimble Cars API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register Customer",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"customer1\",\n  \"password\": \"pass\",\n  \"role\": \"CUSTOMER\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/customer/register",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "customer", "register"]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "{\n  \"id\": 1,\n  \"username\": \"customer1\",\n  \"role\": \"CUSTOMER\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Available Cars (Customer)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8081/api/customer/cars",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "customer", "cars"]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "[\n  {\n    \"id\": 1,\n    \"model\": \"Toyota\",\n    \"variant\": \"Corolla\",\n    \"registrationNumber\": \"ABC123\",\n    \"status\": \"IDEAL\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Register Car (Owner)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"model\": \"Toyota\",\n  \"variant\": \"Corolla\",\n  \"registrationNumber\": \"ABC123\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/owner/cars?ownerId=1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "owner", "cars"],
+          "query": [
+            { "key": "ownerId", "value": "1" }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "{\n  \"id\": 1,\n  \"model\": \"Toyota\",\n  \"variant\": \"Corolla\",\n  \"registrationNumber\": \"ABC123\",\n  \"status\": \"IDEAL\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Owner's Cars",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8081/api/owner/cars?ownerId=1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "owner", "cars"],
+          "query": [
+            { "key": "ownerId", "value": "1" }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "[\n  {\n    \"id\": 1,\n    \"model\": \"Toyota\",\n    \"variant\": \"Corolla\",\n    \"registrationNumber\": \"ABC123\",\n    \"status\": \"IDEAL\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Start Lease (Customer)",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8081/api/customer/lease/start?carId=1&customerId=2",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "customer", "lease", "start"],
+          "query": [
+            { "key": "carId", "value": "1" },
+            { "key": "customerId", "value": "2" }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "{\n  \"id\": 1,\n  \"car\": {\n    \"id\": 1,\n    \"model\": \"Toyota\"\n  },\n  \"customer\": {\n    \"id\": 2,\n    \"username\": \"customer1\"\n  },\n  \"startDate\": \"2025-07-08T13:00:00\",\n  \"endDate\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "End Lease (Customer)",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8081/api/customer/lease/end?leaseId=1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "customer", "lease", "end"],
+          "query": [
+            { "key": "leaseId", "value": "1" }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "{\n  \"id\": 1,\n  \"car\": {\n    \"id\": 1,\n    \"model\": \"Toyota\"\n  },\n  \"customer\": {\n    \"id\": 2,\n    \"username\": \"customer1\"\n  },\n  \"startDate\": \"2025-07-08T13:00:00\",\n  \"endDate\": \"2025-07-08T14:00:00\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Customer's Leases",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8081/api/customer/leases?customerId=2",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "customer", "leases"],
+          "query": [
+            { "key": "customerId", "value": "2" }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "[\n  {\n    \"id\": 1,\n    \"car\": {\n      \"id\": 1,\n      \"model\": \"Toyota\"\n    },\n    \"startDate\": \"2025-07-08T13:00:00\",\n    \"endDate\": \"2025-07-08T14:00:00\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get All Cars (Admin)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8081/api/admin/cars",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "admin", "cars"]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "[\n  {\n    \"id\": 1,\n    \"model\": \"Toyota\",\n    \"variant\": \"Corolla\",\n    \"registrationNumber\": \"ABC123\",\n    \"status\": \"IDEAL\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get All Users (Admin)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8081/api/admin/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "admin", "users"]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "[\n  {\n    \"id\": 1,\n    \"username\": \"admin1\",\n    \"role\": \"ADMIN\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get All Leases (Admin)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8081/api/admin/leases",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8081",
+          "path": ["api", "admin", "leases"]
+        }
+      },
+      "response": [
+        {
+          "name": "Success",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            { "key": "Content-Type", "value": "application/json" }
+          ],
+          "body": "[\n  {\n    \"id\": 1,\n    \"car\": {\n      \"id\": 1,\n      \"model\": \"Toyota\"\n    },\n    \"customer\": {\n      \"id\": 2,\n      \"username\": \"customer1\"\n    },\n    \"startDate\": \"2025-07-08T13:00:00\",\n    \"endDate\": \"2025-07-08T14:00:00\"\n  }\n]"
+        }
+      ]
+    }
+  ]
+}
