@@ -33,3 +33,108 @@
 2025-07-08 13:37:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-07-08 13:37:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-07-08 13:37:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-08 13:56:37 [Test worker] INFO  c.t.TrimblecarsApplicationTests - Starting TrimblecarsApplicationTests using Java 17.0.15 with PID 89339 (started by codespace in /workspaces/Trimblecars/trimblecars)
+2025-07-08 13:56:37 [Test worker] DEBUG c.t.TrimblecarsApplicationTests - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-08 13:56:37 [Test worker] INFO  c.t.TrimblecarsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-07-08 13:56:38 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-08 13:56:38 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2025-07-08 13:56:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-08 13:56:39 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ec2ac517-9942-4214-a32b-c90cad111f10 user=SA
+2025-07-08 13:56:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-08 13:56:39 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-08 13:56:39 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-08 13:56:39 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-08 13:56:39 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-08 13:56:40 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-08 13:56:41 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-08 13:56:41 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-08 13:56:42 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-08 13:56:42 [Test worker] INFO  c.t.TrimblecarsApplicationTests - Started TrimblecarsApplicationTests in 5.751 seconds (process running for 7.415)
+2025-07-08 13:56:43 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.trimblecars.controller.AdminControllerTest]: AdminControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-07-08 13:56:43 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.trimblecars.TrimblecarsApplication for test class com.trimblecars.controller.AdminControllerTest
+2025-07-08 13:56:43 [Test worker] INFO  c.t.controller.AdminControllerTest - Starting AdminControllerTest using Java 17.0.15 with PID 89339 (started by codespace in /workspaces/Trimblecars/trimblecars)
+2025-07-08 13:56:43 [Test worker] DEBUG c.t.controller.AdminControllerTest - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-08 13:56:43 [Test worker] INFO  c.t.controller.AdminControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-07-08 13:56:44 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-08 13:56:44 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2025-07-08 13:56:44 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-07-08 13:56:44 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:baf3bda4-db66-4b78-ad18-adfaa349064d user=SA
+2025-07-08 13:56:44 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-07-08 13:56:44 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-08 13:56:44 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-08 13:56:44 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-08 13:56:44 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-08 13:56:44 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-08 13:56:44 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-08 13:56:44 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-08 13:56:45 [Test worker] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-07-08 13:56:45 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-07-08 13:56:45 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-07-08 13:56:45 [Test worker] INFO  c.t.controller.AdminControllerTest - Started AdminControllerTest in 1.682 seconds (process running for 9.967)
+2025-07-08 13:56:46 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.trimblecars.controller.CarOwnerControllerTest]: CarOwnerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-07-08 13:56:46 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.trimblecars.TrimblecarsApplication for test class com.trimblecars.controller.CarOwnerControllerTest
+2025-07-08 13:56:46 [Test worker] INFO  com.trimblecars.service.CarService - Car registered
+2025-07-08 13:56:46 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.trimblecars.controller.EndCustomerControllerTest]: EndCustomerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-07-08 13:56:46 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.trimblecars.TrimblecarsApplication for test class com.trimblecars.controller.EndCustomerControllerTest
+2025-07-08 13:56:47 [Test worker] INFO  com.trimblecars.service.CarService - Car registered: Car(id=null, model=null, variant=null, registrationNumber=null, status=IDEAL, owner=User(id=1, username=null, password=null, role=null, cars=[], leases=[]), leases=[])
+2025-07-08 13:56:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-08 13:56:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-08 13:56:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-08 13:56:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-08 13:56:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-07-08 13:56:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-07-08 13:57:37 [Test worker] INFO  c.t.c.EndCustomerControllerTest - Starting EndCustomerControllerTest using Java 17.0.15 with PID 90164 (started by codespace in /workspaces/Trimblecars/trimblecars)
+2025-07-08 13:57:37 [Test worker] DEBUG c.t.c.EndCustomerControllerTest - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-08 13:57:37 [Test worker] INFO  c.t.c.EndCustomerControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-07-08 13:57:38 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-08 13:57:38 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2025-07-08 13:57:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-08 13:57:39 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:111adb41-cb7b-42d6-8e7a-e01ddd5ca736 user=SA
+2025-07-08 13:57:39 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-08 13:57:39 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-08 13:57:39 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-08 13:57:39 [Test worker] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-08 13:57:40 [Test worker] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-08 13:57:40 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-08 13:57:41 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-08 13:57:41 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-08 13:57:42 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-08 13:57:42 [Test worker] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-07-08 13:57:42 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-07-08 13:57:42 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-07-08 13:57:42 [Test worker] INFO  c.t.c.EndCustomerControllerTest - Started EndCustomerControllerTest in 5.773 seconds (process running for 7.549)
+2025-07-08 13:57:44 [Test worker] INFO  com.trimblecars.service.UserService - User registered: User(id=3, username=newuser1751983064202, password=pass, role=CUSTOMER, cars=[], leases=[])
+2025-07-08 13:57:44 [Test worker] WARN  com.trimblecars.service.UserService - Test WARN log for user registration: newuser1751983064202
+2025-07-08 13:57:44 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.trimblecars.TrimblecarsApplicationTests]: TrimblecarsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-07-08 13:57:44 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.trimblecars.TrimblecarsApplication for test class com.trimblecars.TrimblecarsApplicationTests
+2025-07-08 13:57:44 [Test worker] INFO  c.t.TrimblecarsApplicationTests - Starting TrimblecarsApplicationTests using Java 17.0.15 with PID 90164 (started by codespace in /workspaces/Trimblecars/trimblecars)
+2025-07-08 13:57:44 [Test worker] DEBUG c.t.TrimblecarsApplicationTests - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-08 13:57:44 [Test worker] INFO  c.t.TrimblecarsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-07-08 13:57:44 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-08 13:57:44 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2025-07-08 13:57:45 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-07-08 13:57:45 [Test worker] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:f7656203-6efd-484c-a643-8a78f8b7a042 user=SA
+2025-07-08 13:57:45 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+
+
